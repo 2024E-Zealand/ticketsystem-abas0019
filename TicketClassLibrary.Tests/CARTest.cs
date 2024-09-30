@@ -2,36 +2,47 @@ using JetBrains.Annotations;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TicketClassLibrary;
 
-namespace TicketClassLibrary.Tests;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TicketClassLibrary;
 
-[TestClass]
-[TestSubject(typeof(CAR))]
-public class CARTest
+namespace TicketClassLibrary.Tests
 {
-
-    [TestMethod]
-    public void Price_ShouldReturnFixedValue()
+    /// <summary>
+    /// Test class for the <see cref="CAR"/> class.
+    /// </summary>
+    [TestClass]
+    public class CARTest
     {
-        //Jeg opretter en ny instans af CAR klassen
-        var car = new CAR();
+        /// <summary>
+        /// Tests that the <see cref="CAR.Price"/> method returns a fixed price of 240.
+        /// </summary>
+        [TestMethod]
+        public void Price_ShouldReturnFixedValue()
+        {
+            // Create a new instance of the CAR class.
+            var car = new CAR();
+            
+            // Retrieve the price from the Price method.
+            var price = car.Price();
+            
+            // Assert that the price is 240.0.
+            Assert.AreEqual(240.0, price);
+        }
         
-        //Henter Prrisen frq Price metoden
-        var price = car.Price();
-        
-        //jeg bekræfter at prisen er 240
-        Assert.AreEqual(240.0, price);
-    }
-    
-    [TestMethod]
-    public void VehicleType_ShouldReturnCar()
-    {
-        //Jeg opretter en ny instans af CAR klassen
-        var car = new CAR();
-        
-        //Henter VehicleType metoden
-        var vehicleType = car.VehicleType();
-        
-        //jeg bekræfter at vehicleType er Car
-        Assert.AreEqual("Car", vehicleType);
+        /// <summary>
+        /// Tests that the <see cref="CAR.VehicleType"/> method returns the string "Car".
+        /// </summary>
+        [TestMethod]
+        public void VehicleType_ShouldReturnCar()
+        {
+            // Create a new instance of the CAR class.
+            var car = new CAR();
+            
+            // Retrieve the vehicle type from the VehicleType method.
+            var vehicleType = car.VehicleType();
+            
+            // Assert that the vehicle type is "Car".
+            Assert.AreEqual("Car", vehicleType);
+        }
     }
 }

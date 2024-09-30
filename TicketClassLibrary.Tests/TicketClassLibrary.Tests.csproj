@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <TargetFrameworks>net8.0</TargetFrameworks>
-    
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>bin\Debug\net8.0\TicketClassLibrary.xml</DocumentationFile>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
