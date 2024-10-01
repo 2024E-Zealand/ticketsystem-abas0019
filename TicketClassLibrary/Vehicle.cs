@@ -1,7 +1,7 @@
 namespace TicketClassLibrary;
 
 public abstract class Vehicle
-
+    
 {
     /// <summary>
     /// License plate of the vehicle

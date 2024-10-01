@@ -1,38 +1,26 @@
-namespace TicketClassLibrary
+using TicketClassLibrary;
+
+namespace TicketClassLibrary;
+/// <summary>
+/// Represents a Car, inherits from Vehicle.
+/// </summary>
+public class Car : Vehicle
 {
     /// <summary>
-    /// Represents a car and provides methods related to its properties and pricing.
+    /// Returns the price of the car.
     /// </summary>
-    public class CAR 
+    /// <returns>Fixed price of 240.</returns>
+    public override double Price()
     {
-        /// <summary>
-        /// Gets or sets the license plate of the car.
-        /// </summary>
-        /// <value>The license plate as a string.</value>
-        public string LicensePlate { get; set; }
+        return 240;
+    }
 
-        /// <summary>
-        /// Gets or sets the date associated with the car.
-        /// </summary>
-        /// <value>The date as a <see cref="DateTime"/> object.</value>
-        public DateTime Date { get; set; }
-
-        /// <summary>
-        /// Returns the fixed price of the car.
-        /// </summary>
-        /// <returns>The price of the car as a <see cref="double"/>, which is always 240.0.</returns>
-        public double Price()
-        {
-            return 240.0;
-        }
-
-        /// <summary>
-        /// Returns the type of the vehicle.
-        /// </summary>
-        /// <returns>A <see cref="string"/> that represents the vehicle type, which is "Car".</returns>
-        public string VehicleType()
-        {
-            return "Car";
-        }
+    /// <summary>
+    /// Returns the type of vehicle.
+    /// </summary>
+    /// <returns>String "Car".</returns>
+    public override string VehicleType()
+    {
+        return "Car";
     }
 }

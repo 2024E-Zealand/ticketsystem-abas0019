@@ -20,7 +20,7 @@ namespace TicketClassLibrary.Tests
         public void Price_ShouldReturnFixedValue()
         {
             // Create a new instance of the CAR class.
-            var car = new CAR();
+            var car = new Car();
             
             // Retrieve the price from the Price method.
             var price = car.Price();
@@ -36,7 +36,7 @@ namespace TicketClassLibrary.Tests
         public void VehicleType_ShouldReturnCar()
         {
             // Create a new instance of the CAR class.
-            var car = new CAR();
+            var car = new Car();
             
             // Retrieve the vehicle type from the VehicleType method.
             var vehicleType = car.VehicleType();

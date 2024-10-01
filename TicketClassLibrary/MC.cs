@@ -1,40 +1,30 @@
 namespace TicketClassLibrary;
 
-public class MC
 
+
+/// <summary>
+/// Represents a Motorcycle, inherits from Vehicle.
+/// </summary>
+public class MC : Vehicle
 {
-
     /// <summary>
-    /// Får eller sætter motorcyklens nummerplade.
+    /// Returns the price of the motorcycle.
     /// </summary>
-    /// <value>Nummerpladen som en streng.</value>
-    public string LicensePlate { get; set; }
-
-    /// <summary>
-    /// Får eller sætter datoen forbundet med motorcyklen.
-    /// </summary>
-    /// <value>Datoen som et <see cref="DateTime"/> objekt.</value>
-    public DateTime Date { get; set; }
-
-    /// <summary>
-    /// Returnerer motorcyklens faste pris.
-    /// </summary>
-    /// <returns>Prisen på motorcyklen som en <see cref="double"/>, som altid er 125.0.</returns>
-    public double Price()
+    /// <returns>Fixed price of 125.</returns>
+    public override double Price()
     {
-        return 125.0;
+        return 125;
     }
 
     /// <summary>
-    /// Returnerer typen af køretøjet.
+    /// Returns the type of vehicle.
     /// </summary>
-    /// <returns>En <see cref="string"/> der repræsenterer køretøjstypen, som er "MC".</returns>
-    public string VehicleType()
+    /// <returns>String "MC".</returns>
+    public override string VehicleType()
     {
         return "MC";
     }
+}
 
- 
-    }
 
 
