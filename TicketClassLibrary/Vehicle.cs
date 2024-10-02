@@ -12,6 +12,11 @@ public abstract class Vehicle
     /// Date of ticket purchase
     /// </summary>
     public DateTime Date { get; set; }
+    
+    /// <summary>
+    /// Brobizz discount
+    /// </summary>
+    public bool BrobizzUse { get; set; }
 
     /// <summary>
     /// Abstract method for price, to be implemented by derived classes

@@ -12,7 +12,12 @@ public class Car : Vehicle
     /// <returns>Fixed price of 240.</returns>
     public override double Price()
     {
-        return 240;
+        double basePrice = 240;
+        if (BrobizzUse)
+        {
+            return basePrice * 0.95; //5 procent discount
+        }
+        return basePrice;
     }
 
     /// <summary>

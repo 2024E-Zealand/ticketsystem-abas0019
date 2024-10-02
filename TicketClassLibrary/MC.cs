@@ -13,8 +13,17 @@ public class MC : Vehicle
     /// <returns>Fixed price of 125.</returns>
     public override double Price()
     {
-        return 125;
+        double basePrice = 125;
+        if (BrobizzUse)
+        {
+            return basePrice * 0.95; //5 procent discount  
+        }
+
+        {
+            return basePrice;
+        }
     }
+    
 
     /// <summary>
     /// Returns the type of vehicle.
