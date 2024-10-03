@@ -21,7 +21,7 @@ namespace TicketClassLibrary.Tests
         {
             // Create a new instance of the CAR class.
             var car = new Car();
-            
+                                        
             // Retrieve the price from the Price method.
             var price = car.Price();
             

@@ -33,6 +33,9 @@ public class MC : Vehicle
     {
         return "MC";
     }
+
+    public string Licenseplate { get; set; }
+    public bool IsBrobizzUsed { get; set; }
 }
 
 

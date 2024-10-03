@@ -28,4 +28,8 @@ public class Car : Vehicle
     {
         return "Car";
     }
+
+    public string Licenseplate { get; set; }
+    public bool IsBrobizzUsed { get; set; }
 }
+  

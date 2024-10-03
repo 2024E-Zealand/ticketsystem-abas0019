@@ -6,7 +6,7 @@ public abstract class Vehicle
     /// <summary>
     /// License plate of the vehicle
     /// </summary>
-    public string Licenseplate { get; set; }
+    public string LicensePlate { get; set; }
 
     /// <summary>
     /// Date of ticket purchase
