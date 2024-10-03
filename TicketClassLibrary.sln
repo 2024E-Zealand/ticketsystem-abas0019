@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketClassLibrary", "Ticke
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketClassLibrary.Tests", "TicketClassLibrary.Tests\TicketClassLibrary.Tests.csproj", "{D717317E-8298-48E3-978D-9CFC8B548C6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storbæltsbro", "Storbæltsbro\Storbæltsbro.csproj", "{142932D0-BD7A-4C54-A10F-ECF3FE4058EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D717317E-8298-48E3-978D-9CFC8B548C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D717317E-8298-48E3-978D-9CFC8B548C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D717317E-8298-48E3-978D-9CFC8B548C6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{142932D0-BD7A-4C54-A10F-ECF3FE4058EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{142932D0-BD7A-4C54-A10F-ECF3FE4058EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{142932D0-BD7A-4C54-A10F-ECF3FE4058EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{142932D0-BD7A-4C54-A10F-ECF3FE4058EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
